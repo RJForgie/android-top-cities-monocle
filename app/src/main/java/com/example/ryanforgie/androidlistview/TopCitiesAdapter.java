@@ -43,11 +43,7 @@ public class TopCitiesAdapter extends ArrayAdapter<City> {
         country.setText(currentCity.getCountry());
 
         ImageView flag = (ImageView) listItemView.findViewById(R.id.flag);
-        flag.setImageResource(R.drawable.japan7);
-
-        int drawableResourceId = TopCitiesActivity.getResources().getIdentifier("nameOfDrawable", "drawable", TopCitiesActivity.getPackageName());
-
-
+        flag.setImageResource(currentCity.getImageId());
 
 
         listItemView.setTag(currentCity);

@@ -10,13 +10,13 @@ public class City {
     private int ranking;
     private String name;
     private String country;
-    private String imageName;
+    private int imageId;
 
-    public City(Integer ranking, String name, String country, String imageName) {
+    public City(Integer ranking, String name, String country, int imageId) {
         this.ranking = ranking;
         this.name = name;
         this.country = country;
-        this.imageName = imageName;
+        this.imageId = imageId;
     }
 
     public Integer getRanking() {
@@ -31,8 +31,8 @@ public class City {
         return country;
     }
 
-    public String getImageName() {
-        return imageName;
+    public int getImageId() {
+        return imageId;
     }
 
 
